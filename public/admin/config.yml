@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
-
-# when using the default proxy server port
-# local_backend: true
+  branch: master
 
 media_folder: public/img
 public_folder: img
