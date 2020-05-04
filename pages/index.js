@@ -1,26 +1,11 @@
-// import Link from 'next/link';
-// export default () => {
-//     return (
-//         <>
-//             <Link href="/about">
-//                 <a title="About Page">About Page</a>
-//             </Link>
-//         </>
-//     );
-// }
-
-import Head from "next/head"
-import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
+import Layout from '../components/Layout'
 
-export default class Home extends Component {
-    render() {
-        let { title, cats, galleryImages } = attributes;
-        return (
+export default () => {
+    let { title, cats, galleryImages } = attributes;
+    return (
+        <Layout>
             <>
-                <Head>
-                    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-                </Head>
                 <article>
                     <h1>{title}</h1>
                     <HomeContent />
@@ -38,6 +23,6 @@ export default class Home extends Component {
                 ))
                 }
             </>
-        )
-    }
+        </Layout>
+    )
 }

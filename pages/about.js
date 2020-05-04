@@ -1,4 +1,8 @@
-export default () =>
-    <div>
-        <p>This is about us page</p>
-    </div>;
+import Layout from '../components/Layout'
+function About() {
+    return (
+        <Layout> <div>About</div></Layout>
+    );
+}
+
+export default About;
