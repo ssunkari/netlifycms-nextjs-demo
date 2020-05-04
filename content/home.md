@@ -10,6 +10,8 @@ cats:
     name: Grumpy cat (Tardar Sauce)
   - description: New cat added
     name: Tiger
+galleryImages:
+  - /img/166997.jpg
 ---
 
 Welcome to my awesome page about cats of the internet.
