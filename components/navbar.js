@@ -1,8 +1,9 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import React from "react";
 
-function NavBar() {
-    return (
-        <ul>
+const NavBar = () => (
+    <>
+        {<ul>
             <li>
                 <Link href="/">
                     <a>Home</a>
@@ -13,8 +14,9 @@ function NavBar() {
                     <a>About Us</a>
                 </Link>
             </li>
-        </ul>
-    )
-}
+        </ul>}
+    </>
+);
 
-export default NavBar
+
+export default NavBar;
