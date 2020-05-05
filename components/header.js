@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import NavBar from "./navbar";
-import React from "react";
 
 const HeaderComponent = () => (
     <>
